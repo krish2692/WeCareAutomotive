@@ -18,6 +18,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
 }
 
 .navbar {
@@ -33,6 +34,7 @@ header {
 .navbar h1 {
   font-size: 2rem;
   font-weight: 600;
+  flex: 1;
 }
 
 .navbar nav ul {
@@ -54,6 +56,7 @@ header {
 
 .hero {
   text-align: center;
+  padding: 20px;
 }
 
 .hero h2 {
@@ -88,12 +91,15 @@ header {
   gap: 30px;
   padding: 50px;
   background-color: #ffffff;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .service-card {
   background-color: #fff;
   border: 1px solid #D1D1D1;
   padding: 20px;
+  width: 30%;
   text-align: center;
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -179,6 +185,7 @@ header {
   justify-content: space-around;
   overflow-x: scroll;
   gap: 20px;
+  padding-bottom: 20px;
 }
 
 .testimonial {
@@ -212,4 +219,94 @@ footer a {
 footer a:hover {
   text-decoration: underline;
   color: #FF7F3F;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .services {
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .about-us p {
+    font-size: 1.1rem;
+  }
+
+  .testimonials h2 {
+    font-size: 2rem;
+  }
+
+  .testimonial-carousel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    padding: 15px;
+  }
+}
+
+/* Small screen (Mobile) */
+@media screen and (max-width: 480px) {
+  header {
+    height: 80vh;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .cta-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .service-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .navbar h1 {
+    font-size: 1.5rem;
+  }
+
+  .navbar nav ul li a {
+    font-size: 1rem;
+  }
+
+  .about-us h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-us p {
+    font-size: 1rem;
+  }
+
+  .testimonials h2 {
+    font-size: 1.8rem;
+  }
 }
